@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>라프텔 멤버십</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, 
+    maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link rel="stylesheet" type="text/css" href="./src/styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <button id="btn-exit">
+        <img id="btn-exit-img" src="./img/exit.svg" />
+      </button>
+      <div class="top">
+        <div class="top__title">
+          <h1>라프텔 멤버십</h1>
+          <p>
+            동시 방영 신작부터 역대 애니까지<br />멤버십으로 편하게 즐기세요!
+          </p>
+        </div>
+        <div class="top__purchase">
+          <p class="top__purchase__txt1">1개월 (정기결제)</p>
+          <p class="top__purchase__txt2">월 9,900원</p>
+        </div>
+        <button id="btn-purchase">구매</button>
+      </div>
+      <div class="bottom">
+        <p class="bottom__subtitle">구매 안내</p>
+        <p>
+          - 멤버십은 구매한 시점부터 바로 적용됩니다.<br />
+          - 매월 결제 예정일에 자동으로 결제가 됩니다.<br />
+          - 멤버십은 언제든 해지 가능합니다. 해지하셔도 결제 만료일까지 사용
+          가능합니다.<br />
+          - 멤버십 5일 무료 체험 중 구매 혹은 친구 초대로 무료 추가일을 획득한
+          경우, 추가일을 더하여 다음 결제일에 반영됩니다.
+        </p>
+        <p class="bottom__subtitle">이용 안내</p>
+        <p>
+          - 영상은 스트리밍으로 제공되며 해외 이용은 불가합니다.<br />
+          - 멤버십에는 청소년 관람불가 작품이 일부 포함되어 있습니다.<br />
+          - 저작권자의 요청에 따라 멤버십에 제외되는 작품이 있을 수 있습니다.<br />
+          - 멤버십 구매 시 회원등급이 적용되어 앱 내 다움로드 등의 혜택을
+          이용하실 수 있습니다.
+        </p>
+        <p class="bottom__subtitle">환불 안내</p>
+        <p>
+          - 환불은 멤버십 해당 작품을 재생하지 않은 경우 7일 이내 가능합니다.<br />
+          - 1개월(정기결제) 사용 중 해지하는 경우 남은 기간에 대한 금액은
+          환불되지 않습니다.
+        </p>
+        <p class="bottom__subtitle">문의 안내</p>
+        <p>
+          - 기타 문의 사항은 더보기 메뉴의 고객센터로 들어오셔서 1:1문의하기로
+          연락주시면 감사드리겠습니다.
+        </p>
+      </div>
+    </div>
+
+    <!-- Pop-up -->
+    <div class="modal hidden">
+      <div class="modal__background">
+        <div class="modal__overlay"></div>
+        <div class="modal__content">
+          <form class="payment">
+            <p class="payment__title">구매 방법 선택</p>
+            <hr class="divider" />
+            <label class="payment__item">
+              <input
+                class="payment__radio"
+                type="radio"
+                name="payment-radio"
+                value="kakaopay"
+              />
+              <img class="radio__img" src="./img/radio.svg" />
+              <span>카카오페이</span>
+            </label>
+            <hr class="divider" />
+            <label class="payment__item">
+              <input
+                class="payment__radio"
+                type="radio"
+                name="payment-radio"
+                value="creditcard"
+              />
+              <img class="radio__img" src="./img/radio.svg" />
+              <span>신용/체크 카드</span>
+            </label>
+            <hr class="divider" />
+            <label class="payment__item">
+              <input
+                class="payment__radio"
+                type="radio"
+                name="payment-radio"
+                value="phone"
+              />
+              <img class="radio__img" src="./img/radio.svg" />
+              <span>휴대폰 결제</span>
+            </label>
+          </form>
+          <button id="btn-payment">결제</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./src/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,159 @@
+@font-face {
+  font-family: NanumSquareR;
+  src: url(./font/NanumSquareR.ttf);
+}
+@font-face {
+  font-family: NanumSquareB;
+  src: url(./font/NanumSquareB.ttf);
+}
+@font-face {
+  font-family: NanumSquareEB;
+  src: url(./font/NanumSquareEB.ttf);
+}
+
+/* 엘리먼트 공통 스타일 */
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+h1 {
+  font-family: NanumSquareEB;
+  font-size: 24px;
+}
+p {
+  font-family: NanumSquareR;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+}
+button {
+  all: unset;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: NanumSquareEB;
+  text-align: center;
+  padding: 15px 0 15px 0;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #816bff;
+}
+
+/* 상단 영역 스타일 */
+#btn-exit {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  padding: 4px;
+  float: right;
+  background-color: transparent;
+}
+.top {
+  padding: 32px;
+  position: relative;
+  text-align: center;
+  font-size: 16px;
+  color: #282a35;
+  align-items: stretch;
+  overflow: hidden;
+}
+.top__title {
+  margin-bottom: 15%;
+}
+.top__purchase {
+  text-align: left;
+  float: left;
+}
+.top__purchase__txt1 {
+  margin: 0 0 2px 0;
+  font-family: NanumSquareEB;
+}
+.top__purchase__txt2 {
+  margin: unset;
+}
+#btn-purchase {
+  width: 120px;
+  float: right;
+}
+
+/* 하단 영역 스타일 */
+.bottom {
+  padding: 16px;
+  font-size: 12px;
+  color: #6a6c78;
+  background-color: #f5f5f5;
+}
+.bottom__subtitle {
+  font-family: NanumSquareB;
+}
+
+/* 구매방법선택 모달 스타일 */
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  font-family: NanumSquareR;
+  color: #282a35;
+}
+.hidden {
+  display: none;
+}
+.modal__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.modal__content {
+  padding: 16px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background-color: #fff;
+}
+.payment__title {
+  margin: 0 0 16px 0;
+  font-size: 14px;
+}
+.divider {
+  margin: unset;
+  border: 0;
+  height: 1px;
+  background-color: #e0e0e0;
+}
+.payment__item {
+  display: flex;
+  font-size: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  cursor: pointer;
+}
+
+/* margin-top을 설정하지 않으면 payment__item 라벨 안의 img, span의 vertical-align이 맞지 않음 */
+.payment__item > span {
+  margin-top: 0.7%;
+  padding-left: 16px;
+}
+.modal #btn-payment {
+  width: 96px;
+  float: right;
+}
+
+/* 라디오 버튼 스타일 */
+input[type="radio"] {
+  display: none !important;
+}
+input[type="radio"]:checked + .radio__img {
+  content: url(./img/radio-active.svg);
+}
