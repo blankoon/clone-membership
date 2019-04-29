@@ -1,2 +1,9 @@
-### 참고  
-- 닫기 버튼[X] 및 결제 버튼에 대한 클릭 이벤트는 브라우저의 console을 확인해주시길 바랍니다.  
+### Summary  
+This is a clone-coding project for the mobile screen of the membership page.  
+
+
+### Features
+- Close event when clicking [X] button  
+- Pop pop of "Select payment method" modal from the bottom when clicking [구매] button  
+- Close modal when clicking outside of the modal  
+- Show value of the selected payment method when clicking [결제] button   
